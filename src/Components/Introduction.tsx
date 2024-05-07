@@ -36,7 +36,7 @@ const Intro = () => {
         </p>
       </article>
       <article className="flex mt-10 flex-col sm:flex-row w-[60%] sm:w-2/6 justify-evenly">
-        <button>Contact</button>
+        <button className="bg-accent px-8 py-2 rounded-md text-[#f2f2f2] border-accent border-2 text-lg font-semibold">Contact</button>
         <CopyButton />
       </article>
     </section>
