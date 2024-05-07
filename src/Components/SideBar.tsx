@@ -14,17 +14,13 @@ const SideBar = () => {
   const pathname = usePathname();
   const arr = pathname.split("/");
 
-  useEffect(() => {
-    console.log(pathname);
-    console.log(arr);
-  }, [pathname]);
 
   return (
-    <aside className="sticky flex flex-col w-fit  h-[100vh] justify-center items-center   border-r-2 border-gray-200 col-span-2">
+    <aside className="sticky top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
       <nav className="">
         <menu className="flex flex-col gap-6">
           <li
-            className={`w-full  border-red-500 px-8 ${
+            className={`w-full  border-red-500 px-3 md:px-6 ${
               arr.includes("", 1) ? "border-r-4" : ""
             }`}
           >
@@ -40,7 +36,7 @@ const SideBar = () => {
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500 px-8 ${
+            className={`w-full  border-red-500  px-3 md:px-6 ${
               arr.includes("now") ? "border-r-4" : ""
             }`}
           >
@@ -56,7 +52,7 @@ const SideBar = () => {
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500 px-8 ${
+            className={`w-full  border-red-500  px-3 md:px-6 ${
               arr.includes("portfolio") ? "border-r-4" : ""
             }`}
           >
@@ -72,7 +68,7 @@ const SideBar = () => {
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500 px-8 ${
+            className={`w-full  border-red-500 px-3 md:px-6 ${
               arr.includes("blog") ? "border-r-4" : ""
             }`}
           >
