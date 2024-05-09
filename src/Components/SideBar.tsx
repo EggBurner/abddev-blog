@@ -37,10 +37,10 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500  px-3 md:px-6 ${
-              arr.includes("now") ? "border-r-4" : ""
+              arr.includes("about") ? "border-r-4" : ""
             }`}
           >
-            <Link href={"/now"} className=" flex flex-col items-center">
+            <Link href={"/about"} className=" flex flex-col items-center">
               <Image
                 src={now}
                 alt="now"
@@ -48,7 +48,7 @@ const SideBar = () => {
                 width={20}
                 className="opacity-50 dark:invert"
               />
-              <p>Now</p>
+              <p>About</p>
             </Link>
           </li>
           <li

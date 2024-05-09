@@ -1,11 +1,13 @@
 import Intro from "@/Components/Introduction";
-import Technologies from "@/Components/Technologies";
+import Services from "@/Components/Services";
+import Tools from "@/Components/Tools";
 
 export default function Home() {
   return (
     <main className="">
         <Intro />
-        <Technologies />
+        <Services />
+        <Tools />
     </main>
   );
 }
