@@ -1,4 +1,5 @@
 import Intro from "@/Components/Introduction";
+import LatestPosts from "@/Components/LatestPosts";
 import Services from "@/Components/Services";
 import Tools from "@/Components/Tools";
 
@@ -8,6 +9,7 @@ export default function Home() {
         <Intro />
         <Services />
         <Tools />
+        <LatestPosts />
     </main>
   );
 }
