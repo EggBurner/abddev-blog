@@ -4,6 +4,7 @@ import "./globals.css";
 
 import SideBar from "@/Components/SideBar";
 import Header from "@/Components/Header";
+import Footer from "@/Components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
