@@ -29,7 +29,7 @@ const Tools = () => {
       tools: [git, github],
     },
     {
-      name: "Miscellaneous",
+      name: "Misc.",
       tools: [typescript, tailwind, prisma, postman],
     },
   ];
@@ -40,7 +40,7 @@ const Tools = () => {
           Tools
         </h2>
       </span>
-      <article className="grid grid-cols-2 gap-1 rounded-lg w-[90%] mt-10 tools-article">
+      <article className="grid grid-cols-1 sm:grid-cols-2 gap-1 rounded-lg w-[90%] mt-10 tools-article">
         {toolArr.map((item, index) => {
           return (
             <div
@@ -48,9 +48,9 @@ const Tools = () => {
               className="bg-[hsla(0deg,0%,30%,0.2)] dark:bg-[hsla(0deg,100%,0%,0.4)] px-6 py-6 font-semibold text-lg flex items-center justify-between group tool"
             >
               <p>{item.name}</p>
-              <div className="flex w-fit justify-end gap-4">
+              <div className="grid grid-cols-2 sm:flex w-fit justify-end gap-4">
                 {item.tools.map((tool, index) => {
-                  return <Image src={tool} key={index} alt="Tool Icons" className=" w-9 translate-y-20 opacity-0 invisible group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 tool-icon"/>;
+                  return <Image src={tool} key={index} alt="Tool Icons" className="w-6 sm:w-9 translate-y-20 opacity-0 invisible group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 tool-icon"/>;
                 })}
               </div>
             </div>

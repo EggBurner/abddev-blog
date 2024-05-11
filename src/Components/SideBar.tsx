@@ -17,10 +17,10 @@ const SideBar = () => {
 
   return (
     <aside className="sticky top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
-      <nav className="">
+      <nav className="text-sm">
         <menu className="flex flex-col gap-6">
           <li
-            className={`w-full  border-red-500 px-3 md:px-6 ${
+            className={`w-full  border-red-500 px-2 md:px-6 ${
               arr.includes("", 1) ? "border-r-4" : ""
             }`}
           >
@@ -28,15 +28,13 @@ const SideBar = () => {
               <Image
                 src={home}
                 alt="home"
-                height={20}
-                width={20}
-                className="opacity-50 dark:invert"
+                className="opacity-50 dark:invert w-4 sm:w-5"
               />
               <p>Home</p>
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500  px-3 md:px-6 ${
+            className={`w-full  border-red-500  px-2 md:px-6 ${
               arr.includes("about") ? "border-r-4" : ""
             }`}
           >
@@ -46,13 +44,13 @@ const SideBar = () => {
                 alt="now"
                 height={20}
                 width={20}
-                className="opacity-50 dark:invert"
+                className="opacity-50 dark:invert w-4 sm:w-5"
               />
               <p>About</p>
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500  px-3 md:px-6 ${
+            className={`w-full  border-red-500  px-2 md:px-6 ${
               arr.includes("portfolio") ? "border-r-4" : ""
             }`}
           >
@@ -62,13 +60,13 @@ const SideBar = () => {
                 alt="portfolio"
                 height={20}
                 width={20}
-                className="opacity-50 dark:invert"
+                className="opacity-50 dark:invert w-4 sm:w-5"
               />
               <p>Portfolio</p>
             </Link>
           </li>
           <li
-            className={`w-full  border-red-500 px-3 md:px-6 ${
+            className={`w-full  border-red-500 px-2 md:px-6 ${
               arr.includes("blog") ? "border-r-4" : ""
             }`}
           >
@@ -78,7 +76,7 @@ const SideBar = () => {
                 alt="blog"
                 height={20}
                 width={20}
-                className="opacity-50 dark:invert"
+                className="opacity-50 dark:invert w-4 sm:w-5"
               />
               <p>Blog</p>
             </Link>
