@@ -16,7 +16,7 @@ const SideBar = () => {
 
 
   return (
-    <aside className="sticky top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
+    <aside className="sticky z-20 bg-gray-800 top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
       <nav className="text-sm">
         <menu className="flex flex-col gap-6">
           <li
