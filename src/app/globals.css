@@ -17,10 +17,53 @@
     border-bottom-right-radius: 20px;
 }
 
+@media (max-width: 640px) {
+    .services-article > div:nth-of-type(1) {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .services-article > div:nth-of-type(2) {
+        border-radius: 0;
+    }
+    .services-article > div:nth-of-type(3) {
+        border-radius: 0;
+    }
+    .services-article > div:nth-of-type(4) {
+        border-radius: 0;
+    }
+    .services-article > div:nth-of-type(5) {
+        border-radius: 0;
+    }
+    .services-article > div:nth-of-type(6) {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+
+
 .tools-article > div:nth-of-type(1) { border-top-left-radius: 20px;}
 .tools-article > div:nth-of-type(2) { border-top-right-radius: 20px;}
 .tools-article > div:nth-of-type(3) { border-bottom-left-radius: 20px;}
 .tools-article > div:nth-of-type(4) { border-bottom-right-radius: 20px;}
+
+@media (max-width: 640px) {
+    .tools-article > div:nth-of-type(1) {
+        border-radius: 20px 20px 0 0;
+    }
+    .tools-article > div:nth-of-type(2) {
+        border-radius: 0;
+    }
+    .tools-article > div:nth-of-type(3) {
+        border-radius: 0;
+    }
+    .tools-article > div:nth-of-type(4) {
+        border-radius: 0 0 20px 20px ;
+    }
+
+}
+
+
 
 
 .tool:hover .tool-icon:nth-child(1) {
@@ -34,4 +77,8 @@
 }
 .tool:hover .tool-icon:nth-child(4) {
     transition: all 0.8s ease-in-out;
+}
+
+.latest-projects {
+    background-image: linear-gradient(transparent, black);
 }
