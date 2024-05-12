@@ -67,10 +67,10 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500 px-2 md:px-6 ${
-              arr.includes("blogs") ? "border-r-4" : ""
+              arr.includes("blog") ? "border-r-4" : ""
             }`}
           >
-            <Link href={"/blogs"} className=" flex flex-col items-center">
+            <Link href={"/blog"} className=" flex flex-col items-center">
               <Image
                 src={blog}
                 alt="blog"
