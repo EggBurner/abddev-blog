@@ -16,7 +16,7 @@ const SideBar = () => {
 
 
   return (
-    <aside className="sticky z-20 bg-gray-800 top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
+    <aside className="sticky z-20 bg-white dark:bg-gray-800 top-[0.01em] flex flex-col w-fit  h-[100vh] justify-center items-center border-r-2 border-gray-200 col-span-3 sm:col-span-2">
       <nav className="text-sm">
         <menu className="flex flex-col gap-6">
           <li
@@ -67,10 +67,10 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500 px-2 md:px-6 ${
-              arr.includes("blog") ? "border-r-4" : ""
+              arr.includes("blogs") ? "border-r-4" : ""
             }`}
           >
-            <Link href={"/blog"} className=" flex flex-col items-center">
+            <Link href={"/blogs"} className=" flex flex-col items-center">
               <Image
                 src={blog}
                 alt="blog"

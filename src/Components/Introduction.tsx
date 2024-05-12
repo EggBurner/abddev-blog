@@ -33,7 +33,7 @@ const Intro = () => {
         </p>
       </article>
       <article className="flex mt-10 flex-col sm:flex-row sm:w-2/6 gap-4 ">
-        <button className="bg-accent px-8 py-2 rounded-md text-[#f2f2f2] border-accent border-2 text-lg font-semibold">Contact</button>
+        <button className="bg-accent px-8 py-2 rounded-md text-[#f2f2f2] border-accent border-2 text-lg font-semibold w-fit">Contact</button>
         <CopyButton />
       </article>
     </section>

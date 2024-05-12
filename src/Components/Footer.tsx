@@ -9,9 +9,10 @@ import Contact from "./Contact";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t-2 border-white col-span-12 h-80 relative z-10 ">
-      <div className="w-[80%] mx-auto h-full grid grid-cols-6 items-center">
-        <article className="flex flex-col gap-8 col-span-2">
+    <footer className="mt-20 border-t-2 border-gray-200 col-span-12 h-[32rem] relative z-10 ">
+      <div className="ml-24 md:ml-32 lg:w-[80%] lg:mx-auto grid grid-cols-1 sm:grid-cols-6 pt-6 gap-12">
+        <Contact />
+        <article className=" hidden  sm:flex flex-col gap-8 sm:col-span-2">
           <span className="inline-block h-12 translate-y-3 rotate-[-2deg] bg-[hsla(0deg,100%,40%,0.3)] w-fit">
             <h2 className="text-4xl font-bold translate-y-[-0.2em] text-accent rotate-3">
               AbdDEV
@@ -24,9 +25,9 @@ const Footer = () => {
             <a className=" w-fit bg-[hsla(0deg,100%,40%,0.3)] flex items-center gap-2"><Image src={insta} alt="insta icon" className="w-6 h-6 inline-block"/>Instagram</a>
           </div>
         </article>
-        <Contact />
+
       </div>
-      <div><p className="w-fit block mx-auto text-sm text-gray-500">Copyright &copy; Abdullah Islam 2024. All rights reserved.</p></div>
+      <div className="mt-2"><p className="w-fit block mx-auto text-[0.3em] sm:text-sm text-gray-500">Copyright &copy; Abdullah Islam 2024. All rights reserved.</p></div>
     </footer>
   );
 };
