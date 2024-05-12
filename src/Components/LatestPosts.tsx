@@ -50,7 +50,7 @@ const LatestPosts = async () => {
         ))}
       </article>
       <div>
-        <Link href={'/blog'}><button className="float-right mt-6 bg-accent px-4 py-2 rounded-md text-[#f3f3f3]">More Posts</button></Link>
+        <Link href={'/blogs'}><button className="float-right mt-6 bg-accent px-4 py-2 rounded-md text-[#f3f3f3]">More Posts</button></Link>
       </div>
 
     </section>

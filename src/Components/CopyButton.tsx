@@ -17,7 +17,7 @@ const CopyButton = () => {
 
     }
   return (
-    <button className={`flex gap-2 border-2 text-gray-600 dark:text-gray-300 px-4 py-2 rounded-md items-center justify-center ${copied? 'border-accent' : 'border-gray-700'}`} onClick={handleClick}>
+    <button className={`flex gap-2 border-2 text-gray-600 dark:text-gray-300 px-4 py-2 rounded-md items-center justify-center w-fit ${copied? 'border-accent' : 'border-gray-700'}`} onClick={handleClick}>
     <Image
       src={copy}
       alt="copy email"
