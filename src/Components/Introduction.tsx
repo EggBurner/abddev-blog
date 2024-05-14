@@ -8,13 +8,13 @@ import CopyButton from "./CopyButton";
 const Intro = () => {
   return (
     <section className="mt-8">
-      <Link href={'/about'}>
+      <Link href={'/about'} className="w-fit">
         <Image
           src={me}
           alt="Profile photo"
           width={60}
           height={60}
-          className="rounded-full"
+          className="rounded-full inline-block"
         />
       </Link>
 

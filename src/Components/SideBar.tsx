@@ -12,7 +12,7 @@ import blog from "../../public/blog.png";
 
 const SideBar = () => {
   const pathname = usePathname();
-  const arr = pathname.split("/");
+  const arr = pathname?.split("/");
 
 
   return (
@@ -21,7 +21,7 @@ const SideBar = () => {
         <menu className="flex flex-col gap-6">
           <li
             className={`w-full  border-red-500 px-2 md:px-6 ${
-              arr.includes("", 1) ? "border-r-4" : ""
+              arr?.includes("", 1) ? "border-r-4" : ""
             }`}
           >
             <Link href={"/"} className="flex flex-col items-center">
@@ -35,7 +35,7 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500  px-2 md:px-6 ${
-              arr.includes("about") ? "border-r-4" : ""
+              arr?.includes("about") ? "border-r-4" : ""
             }`}
           >
             <Link href={"/about"} className=" flex flex-col items-center">
@@ -51,7 +51,7 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500  px-2 md:px-6 ${
-              arr.includes("portfolio") ? "border-r-4" : ""
+              arr?.includes("portfolio") ? "border-r-4" : ""
             }`}
           >
             <Link href={"/portfolio"} className=" flex flex-col items-center">
@@ -67,7 +67,7 @@ const SideBar = () => {
           </li>
           <li
             className={`w-full  border-red-500 px-2 md:px-6 ${
-              arr.includes("blog") ? "border-r-4" : ""
+              arr?.includes("blog") ? "border-r-4" : ""
             }`}
           >
             <Link href={"/blog"} className=" flex flex-col items-center">
