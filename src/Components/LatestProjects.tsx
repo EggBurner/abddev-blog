@@ -47,7 +47,7 @@ const LatestProjects = () => {
             />
           </div>
           <div className="pt-8 px-3 -translate-y-4 rounded-2xl bg-white border dark:bg-slate-800 border-none">
-            <h2 className="text-lg font-semibold">Virtual Acadmey's Website Development</h2>
+            <h2 className="text-lg font-semibold">Virtual Acadmey&apos;s Website Development</h2>
           </div>
         </div>
       </article>

@@ -44,7 +44,7 @@ const Contact = () => {
             maxLength={25}
             placeholder="Enter your name here"
             name="name"
-            className=" bg-gray-700 p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50"
+            className=" bg-gray-300 placeholder-gray- dark:bg-gray-700  p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50"
           />
         </div>
         <div className="flex flex-col">
@@ -53,7 +53,7 @@ const Contact = () => {
             type={"text"}
             placeholder="Enter your Email here"
             name="email"
-            className=" bg-gray-700 p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50"
+            className=" bg-gray-300 placeholder-gray- dark:bg-gray-700 p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50"
           />
         </div>
         <div className="flex flex-col">
@@ -63,7 +63,7 @@ const Contact = () => {
             required
             name="message"
             rows={5}
-            className=" bg-gray-700 p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 resize-none message-textarea"
+            className=" bg-gray-300 placeholder-gray- dark:bg-gray-700  p-2 rounded-md text-slate-300 border-none outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 resize-none message-textarea"
           />
         </div>
         <div>
