@@ -9,11 +9,11 @@ import sun from "../../public/sun.png";
 import moon from "../../public/moon.png";
 
 const Header = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     let storageTheme = localStorage.getItem("theme");
-    if(storageTheme === "dark") setTheme('dark')
+    if(storageTheme === "light") setTheme('light')
   }, []);
 
 
