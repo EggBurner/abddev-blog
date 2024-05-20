@@ -31,59 +31,59 @@ const page = async ({ params }: { params: { id: string } }) => {
               alt={blog?.title ?? ""}
               width={600}
               height={400}
-              className="w-[75%] h-96 object-cover rounded-xl absolute peer"
+              className="w-[60%] sm:w-[75%] h-96 object-cover rounded-xl absolute peer"
             />
-            <h1 className="relative translate-y-[28rem] translate-x-4 w-fit text-4xl font-bold group-hover:translate-y-80 transition-transform duration-300 text-white">{blog?.title}</h1>
+            <h1 className="relative sm:translate-y-[28rem] translate-x-4 w-[60%] sm:w-[75%] text-2xl sm:text-4xl font-bold sm:group-hover:translate-y-80 transition-transform duration-300 text-white">{blog?.title}</h1>
           </div>
         </article>
-        <article className="mt-10 w-[80%]">
+        <article className="mt-10 w-[90%] sm:w-[80%]">
           <p>{blog?.contentOne}</p>
           <Image
             src={blog?.imageOne ?? ""}
             alt="decoration"
             width={600}
             height={400}
-            className="w-full h-96 object-cover rounded-xl mt-10 "
+            className="w-full h-60 sm:h-96 object-cover rounded-xl mt-10 "
           />
         </article>
-        <article className="mt-10 w-[80%]">
+        <article className="mt-10 w-[90%] sm:w-[80%]">
           <p>{blog?.contentTwo}</p>
           <Image
             src={blog?.imageTwo ?? ""}
             alt="decoration"
             width={600}
             height={400}
-            className="w-full h-96 object-cover rounded-xl mt-10 "
+            className="w-full h-60 sm:h-96 object-cover rounded-xl mt-10 "
           />
         </article>
-        <article className="mt-10 w-[80%]">
+        <article className="mt-10 w-[90%] sm:w-[80%]">
           <p>{blog?.contentThree}</p>
           <Image
             src={blog?.imageThree ?? ""}
             alt="decoration"
             width={600}
             height={400}
-            className="w-full h-96 object-cover rounded-xl mt-10 "
+            className="w-full h-60 sm:h-96 object-cover rounded-xl mt-10 "
           />
         </article>
-        <article className="mt-10 w-[80%]">
+        <article className="mt-10 w-[90%] sm:w-[80%]">
           <p>{blog?.contentFour}</p>
           <Image
             src={blog?.imageFour ?? ""}
             alt="decoration"
             width={600}
             height={400}
-            className="w-full h-96 object-cover rounded-xl mt-10 "
+            className="w-full h-60 sm:h-96 object-cover rounded-xl mt-10 "
           />
         </article>
-        <article className="mt-10 w-[80%]">
+        <article className="mt-10 w-[90%] sm:w-[80%]">
           <p>{blog?.contentFive}</p>
           <Image
             src={blog?.imageFive ?? ""}
             alt="decoration"
             width={600}
             height={400}
-            className="w-full h-96 object-cover rounded-xl mt-10 "
+            className="w-full h-60 sm:h-96 object-cover rounded-xl mt-10 "
           />
         </article>
       </section>

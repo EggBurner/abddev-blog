@@ -14,6 +14,11 @@ const LatestPosts = async () => {
       orderBy: {
         createdAt: "desc",
       },
+      select: {
+        title: true,
+        contentOne: true,
+        id: true,
+      },
       take: 4,
     });
   } catch (err) {
@@ -31,28 +36,32 @@ const LatestPosts = async () => {
       </span>
       <article className="grid grid-cols-1 sm:grid-cols-2 gap-1 rounded-lg w-full mt-10  tools-article">
         {blogs?.map((item, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-2 bg-[hsla(0deg,0%,30%,0.2)] dark:bg-[hsla(0deg,100%,0%,0.4)] px-6 py-6 group"
-          >
-            <Image
-              src={red}
-              alt="red color decoration"
-              className="w-12 h-12 block rounded-lg"
-            />
-            <div className="flex flex-col flex-wrap w-4/5 gap-1 text-ellipsis overflow-hidden">
-              <h2 className="text-lg font-semibold group-hover:underline">{item.title}</h2>
-              <p className="text-ellipsis overflow-hidden dark:text-[hsla(0deg,0%,100%,0.5)] text-[hsla(0deg,100%,0%,0.8)]">
-                {item.contentOne}
-              </p>
+          <Link href={`/blog/${item.id}`} key={index}>
+            <div className="flex items-center gap-2 bg-[hsla(0deg,0%,30%,0.2)] dark:bg-[hsla(0deg,100%,0%,0.4)] px-6 py-6 group">
+              <Image
+                src={red}
+                alt="red color decoration"
+                className="w-12 h-12 block rounded-lg"
+              />
+              <div className="flex flex-col flex-wrap w-4/5 gap-1 text-ellipsis overflow-hidden">
+                <h2 className="text-lg font-semibold group-hover:underline">
+                  {item.title}
+                </h2>
+                <p className="text-ellipsis overflow-hidden dark:text-[hsla(0deg,0%,100%,0.5)] text-[hsla(0deg,100%,0%,0.8)]">
+                  {item.contentOne}
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </article>
       <div>
-        <Link href={'/blog'}><button className="float-right mt-6 bg-accent px-4 py-2 rounded-md text-[#f3f3f3]">More Posts</button></Link>
+        <Link href={"/blog"}>
+          <button className="float-right mt-6 bg-accent px-4 py-2 rounded-md text-[#f3f3f3]">
+            More Posts
+          </button>
+        </Link>
       </div>
-
     </section>
   );
 };
